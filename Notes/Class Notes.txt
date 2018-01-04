@@ -1,0 +1,20 @@
+Notes
+------
+-> we can compile any class in java 
+-> we cannot run a class in java with out main method
+
+-> static methods accepts only static data. 
+-> static methods never allow instance/ non static methods or
+   variables directly.
+
+-> we can access non static data from a static methods only 
+   with the help of a 'object'
+
+-> static data is sharable to all the objects of a class
+-> instance data is available only to a particular object
+-> Non static methods allows tgo access static and non static    data directly with out help of a object in the same class
+
+
+
+
+
