@@ -1,0 +1,35 @@
+Naming Convensions in Java
+------------------------------
+Class
+------
+Every class in Java Should be start with upper case letter. if there are more than one word in a class name, then each word first letter should be capitalized.
+Ex: Employee, Bank, StudentInformation,PersonalAccountDetails
+
+Varaibles/Objects
+------------------
+Every variable/object in java should start with lower case letter. If there are more than one word in a variable/object name, then every word first letter should be capitalized.
+Ex: age, myAge, studentName,personalAccountNumber
+
+Packages
+--------
+Every package in java should be in lower case letters only.
+Ex: com, cognizant, com.cts etc
+
+Const
+------
+All cont in java should be defined as upper case letters only.
+Ex: PI=3.141, MAX_AGE=89, MAX_CAPACITY=76.45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
