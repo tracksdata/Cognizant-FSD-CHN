@@ -44,7 +44,7 @@ POJO stands for Plain old java object
 
 Rules for creating/constructing POJO classes
 ----------------------------------------------
--> Every property in  class should be 'private'
+-> Every property in  class should be 	
 -> Every method in class should be defined as 'public' with
    getXXX and setXXX
    
