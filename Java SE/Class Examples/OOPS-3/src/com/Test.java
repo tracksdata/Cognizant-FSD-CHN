@@ -1,11 +1,15 @@
 package com;
 
-public class Test {
+import java.util.Date;
+
+class Test {
+	 int x=98;
 
 	public static void main(String[] args) {
 		Employee e1=new Employee();
 		Employee e2=new Employee();
 		Employee e3=new Employee();
+		
 		
 		//e1.salary=994797;// Not RM
 		

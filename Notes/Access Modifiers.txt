@@ -1,0 +1,18 @@
+Access Modifiers
+------------------
+public
+-------
+-> public data can be accessble any where in the package or    out side of a package.
+
+default:
+---------
+Accessble only with in the same paackage/folder. No other packag's classes cannot access the defalt classes or data
+
+protected
+----------
+Accessble with in the same package/folder like default and also to any sub class of any package
+
+private
+-------
+-> Only with in the  same class. 
+

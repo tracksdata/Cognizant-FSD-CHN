@@ -1,6 +1,6 @@
 package com;
 
-public class Employee {
+ public class Employee {
 
 	/*
 	 * -> Setters will not have return type but will have parameters -> getters will
