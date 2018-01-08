@@ -14,3 +14,50 @@ Complex class
 --------------
 A class who can hold more than one type of data
 Ex: Employee, Bank, Student etc
+
+
+Constructor
+--------------
+->It is a member of a class which gets executed when the   object of the class is created.
+-> Constructor name and class name should be same
+-> Constructor must not have return type. Not even void
+-> Constructor can have parameters.
+
+Why we use constructors?
+-------------------------
+-> To initialise data to the class obj before any method gets
+   called
+-> To mandate class properies must be initialised while 
+   creating the object.
+
+Note:
+-----
+-> JVM adds a default constructor when you are not providing
+   any parametarised constructor.
+-> JVM will not be adding any default constructor if you are    proving parametarized constructor
+-> We can Initialze data to a final variable in constructor
+
+
+POJO/Bean/Entity Class
+------------------------
+POJO stands for Plain old java object
+
+Rules for creating/constructing POJO classes
+----------------------------------------------
+-> Every property in  class should be 'private'
+-> Every method in class should be defined as 'public' with
+   getXXX and setXXX
+   
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
