@@ -10,6 +10,9 @@ public class Demo6 {
 		//int x[][]=new int[2][2];
 		//int[][] y=new int[2][2];
 		int [][]y=new int[2][2];
+		
+		int ii=10,bb=20;
+		
 		for(int row=0;row<x.length;row++) {
 			for(int col=0;col<x[row].length;col++) {
 				System.out.print(x[row][col]+" ");

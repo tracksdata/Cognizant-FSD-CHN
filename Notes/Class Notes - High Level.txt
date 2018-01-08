@@ -1,0 +1,16 @@
+class
+-------
+-> Two Types of Classes
+	-> Simple class
+	-> Complex Class
+
+Simple class
+-------------
+A class who can hold only one type of content
+Ex: String s1="Abc";
+    Integer i=100;
+
+Complex class
+--------------
+A class who can hold more than one type of data
+Ex: Employee, Bank, Student etc
