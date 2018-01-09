@@ -1,0 +1,26 @@
+Polymorphism
+---------------
+-> Appearing in many forms
+Two Types
+----------
+	-> static poly	-> method overloaod-> compile time
+	-> dynamic poly -> method override -> run time
+
+static polymorphism : method overload
+--------------------- 
+-> defining the same method with different signature.
+Method Signature includes following
+	-> method name
+	-> number of parameters
+	-> type of parameters
+	-> position of parameters
+
+
+Note: return type of a method is not considered as method 
+      overloading
+
+
+
+
+
+
