@@ -1,0 +1,31 @@
+Inheritance
+--------------
+
+Class relationships
+Two Types
+	1. Is 'A'
+	2. has 'A'
+
+1. is 'A'
+----------
+	-> Used in Inheritance design
+Notes
+------
+-> A super class can store all its sub class objects
+-> Referance of a super class can be used to access all the
+   methods in the super class and also overridden methods  (method wich is avaiable in super and sub class) of the sub   class.
+-> The referance of a super class cannot be used to acess the 
+   idividual methods(methods which are avaiable in sub clas 
+   and not avaible in super class)  of a sub class
+
+
+
+
+
+
+
+
+
+
+
+

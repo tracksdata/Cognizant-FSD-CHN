@@ -19,6 +19,15 @@ Method Signature includes following
 Note: return type of a method is not considered as method 
       overloading
 
+Dynamic Polymorphism: Method overriding
+-----------------------------------------
+-> Defining the same method with same signature in sub 
+   class is called method overriding
+
+
+
+
+
 
 
 
