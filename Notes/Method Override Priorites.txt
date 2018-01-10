@@ -1,0 +1,8 @@
+Method Override priorities
+-> If Super class method is defined as 'public' then all the
+   sub classes must overide that method as only 'public'
+->  If Super class method is defined as 'default' then all     the sub classes must override that method as 'public or     defalt or protected' only.
+-> If Super class method is defined as 'protected' then all    the sub classes must override that method as 'protected or
+   public' only. 
+-> private methods not visible to any classes or any non sub    classes 
+
