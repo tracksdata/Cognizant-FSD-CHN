@@ -1,0 +1,16 @@
+Java Program
+	-> Tight coupling
+	-> Loose coupling
+
+Tight Coupling
+---------------
+	-> No extendability
+	-> All class components tighly coupled wach other
+	-> Code maintanence issues
+
+Loose Coupling
+---------------
+	-> Extendability
+	-> All clas components are independently constructed
+	-> code organization and maintanence is easy
+

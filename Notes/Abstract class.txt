@@ -14,3 +14,19 @@ Abstact class
 -> An abstract method is a method specifecation. It does not
    provide body/impplementation
 -> Abstract class can not be defined as 'final'
+-> All the sub classes of an abstract must over ride 'all' 
+   abstract methods of an abstract class.
+-> If any sub class of abstarct class  is not overriding         any abstract method, then that sub class must be defined
+   as 'abstract'
+
+Note:
+-----
+-> Abtsratc class does not provide 100% abstraction
+-> No extensionbility with abstract classes
+
+
+
+
+
+
+
