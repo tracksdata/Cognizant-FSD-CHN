@@ -1,0 +1,27 @@
+Interfaces
+-----------------
+-> An interface is a method specifecation.
+-> An interface contains only abstract methods. 
+-> All variable in interface by defalt public static final
+-> A class should implement an interface
+
+Notes
+------
+1. A class can extends to another class
+2. A class can implements to an anoter interface
+3. An interface can extends to another interface
+4. A class cannot implements another class
+5. An interface cannot implements another interface
+6. A class can extends only one class
+7. An interface can extends more than one interface
+8. A class can implements more than one interface
+
+Uses of an interfaces
+-------------------------
+	-> 100% abstraction
+	-> Extensibility
+	-> Supports multiple inheritance
+	-> Code organization
+	-> code maintanence
+
+

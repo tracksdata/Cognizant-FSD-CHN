@@ -6,6 +6,7 @@ public class Test {
 		
 		Shape s=new Circle();
 		s.draw();
+		s.shapeInfo();
 		
 		s=new Square();
 		s.draw();		
