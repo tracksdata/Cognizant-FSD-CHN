@@ -1,0 +1,15 @@
+String
+--------
+Types of Objects
+	-> Immutable -> Content cannot be modified
+	-> Mutable-> content can be modified
+
+Immutable
+---------
+-> String
+  and all wraper class
+
+Mutable
+--------
+-> StringBuffer, StringBuilder and all complex classes
+
