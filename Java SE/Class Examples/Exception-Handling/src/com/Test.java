@@ -2,6 +2,7 @@ package com;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 public class Test {
 	public static void main(String[] args) {
 
@@ -10,11 +11,14 @@ public class Test {
 		while(result) {
 		try {
 
-			InputStreamReader isr = new InputStreamReader(System.in);
-			BufferedReader br = new BufferedReader(isr);
+			Scanner sc=new Scanner(System.in);
+			
+			/*InputStreamReader isr = new InputStreamReader(System.in);
+			BufferedReader br = new BufferedReader(isr);*/
 
 			System.out.println("Enter a No: ");
-			int x = Integer.parseInt(br.readLine());
+			int x = sc.nextInt();
+			//Integer.parseInt(br.readLine());
 			System.out.println("No is " + x);
 			result=false;
 
