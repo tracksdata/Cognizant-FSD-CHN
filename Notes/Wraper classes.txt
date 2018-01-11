@@ -1,0 +1,26 @@
+Wrapper Classes:
+   ----------------
+ 	
+   use :
+   ----
+      
+         To covert/wrap all primitives as Objects.
+         
+    why we need?
+    
+          --> To Get Object-Level methods on primitives.
+          --> To group values within Collections.
+          --> To have many number/character related fun 
+              on primitives.
+              
+            Wraper     Primitive
+	------------------------------
+              Byte  --> byte
+              Short --> short
+   	      Integer --> int
+   	      Long    --> long
+   	      Float  --> float
+              Double  --> double
+              Character --> char
+              Boolean   --> boolean			
+  

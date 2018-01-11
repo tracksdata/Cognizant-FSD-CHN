@@ -1,0 +1,257 @@
+
+
+Exception Handling
+--------------------
+
+  Def: Exception:
+
+  
+  			--> Un-Expected program distrub at runtime.
+  			
+  			
+  	what happen if exception occur?
+  	--------------------------------
+  	
+  	By default, JRE will terminate appln Execution.		
+  	
+  	why we need to handle?
+  	
+  	---> By handling, to Continue further program Exe.
+  	
+  ---------------------------------
+  
+  Some Reasons for Exceptions
+  
+  
+    --> Invalid Input
+    --> Null pointer oprn
+    --> accessing array beyon index
+    --> Input/output sources.
+    --> Invalid File locations
+    --> security constraints.
+    --> Network issues
+    --> Database connection
+    --> Database access
+    --> H/W failures
+    --> Etc
+  
+  
+  ---------------------------------------
+  
+  
+  How to avoid exceptions without Exception Handlers?
+  
+  
+ 	 --> Mix Error Handling Code + Business Logic Code
+  
+  
+  
+  Advantages of Exception Handling
+  -------------------------------
+  
+  
+   --> To separate Error Handling Code from real
+        Business Logic.
+        
+   --> To re-use Error handling code across Appln. 
+        
+   --> To Continue Appln exe even Exception occur by
+        handling it.
+        
+   --> If any error occur on server appln, To report that Error
+       to client Appln.     
+   
+   --> To skip some oprn code, if some condition get fail.
+   
+   --> To Log all Error Messages in Log File. ( Loging API )     
+             
+             
+  How to handle?
+  ----------------
+  
+  
+  Use Java Exception-handler Keywords with Exception Classes.
+  
+ 
+  
+  1. try,catch,finally
+  2. throws
+  3. throw           
+  
+  
+  ---------------------------------------------------------
+  
+  
+  If Exception occur
+  
+  --> JRE internally will create   using exception class,  
+     'Exception Object' & throw it.
+   
+   that contains info
+      about
+      
+              --> what
+              --> why
+              --> where 
+          
+  --> If No exception handler with your code(try,catch), JRE itself
+      will handle it ( Terminate Appln Exe ).
+      
+  --> Dont Give That Exception Obj Back to JRE, YOu Catch It     
+  
+     
+     
+     Notes:
+     ------
+     
+     --> Method doubt code need to be enclosed with try block
+         to monitor for exception.
+         
+     --> Every try block must have atleast one catch Block
+     
+     --> One try can throw only one exception obj at a time
+          
+     --> In try if exception occur, 
+         rest try block code will not execute
+         
+     --> One try can have multiple catch blocks, to handle
+         different exception in different way.
+         
+     --> If there is no matching catch block for Excep, again
+         JRE will handle it.        
+       
+     --> 'Exception' class is super class of all java Exception
+          Classes. 
+  
+     --> Throws Exception Obj, will be matched with catch blocks
+         in that order that you defined.
+         
+     --> Dont define Higher-Level Exception catch blocks before
+         Lower-Level.
+         
+     --> IF No Exception. Catch Blocks will never Execute.  
+     
+     
+     
+     Finally Block :
+     ---------------
+     
+     --> If some code need to execute 
+         always(If Exception or No)
+         with try at the end, place that code in finally block.
+         
+     --> If Method returning any data from try or catch,
+         before return 'finally' block will execute first. 
+         
+     --> Place finally block after all catches.
+     
+     --> Try can be with finally block, without catch block.       
+         
+         
+         
+  -----------------------------------------------
+  
+  throws
+  -------     
+     
+     --> If Called method dont want handle the Exception, 
+         to propagate exception to calling method.
+         
+         
+         
+   --------------------------------------------------      
+         
+         
+         Types of Exceptions:
+         ---------------------
+         
+         
+         1. Checked .
+         
+            --> Compiler will verify, do you have Exception
+                handlers(try-catch,throws) to handle.
+                
+           --> Any Exception-class , sub-class of 'Exception' 
+           
+           --> e.g : IO ,  DB , N/w operation    
+                
+         
+         2. Un-Checked Exception.
+         
+         --> Compiler will not force to use Exception
+                handlers(try-catch,throws) to handle.
+         
+         --> Any Exception-class , 
+            sub-class of 'RuntimeException'
+            
+         --> e.g : Arith, Array-Index , Null pointer   
+         
+     
+     -------------------------------------
+     
+     Exception Class hierarchy
+     ---------------------
+     
+     Exception  ( Checked )
+     
+     RuntimeException  ( Un-checked )
+     
+     
+ ------------------------------------------
+ 
+ 
+ When Excep will occur?
+  
+ By default JRE will raise Exception
+ when your program exe code not met pre-defined
+ JRE specifications.
+  
+  
+ ----------
+  
+  
+  'throw'
+ ---------------
+ 
+   when user user condition get failed based on appln
+   specific logic, To raise Exception.
+   
+   Note : When using throw keyword, You must use
+          either try-catch or throws with method to
+          handle it.  
+  
+  
+  Final Note:
+  -----------
+  
+  1. try-catch-finally : To handle Exception in that method.
+  2. throws            : To propagate Exception to Calling Method
+  3. throw             : To Raise Exception for Your conditions
+  
+  
+  
+  UserDefined Exception classes
+  -----------------------------
+  
+  Rule : 
+  
+  Extend by 'Exception' or 'RuntimeException' with
+  Exception Information/Logic
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+     
+            
+  
+  	
+  	

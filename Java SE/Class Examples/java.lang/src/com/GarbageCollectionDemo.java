@@ -1,6 +1,6 @@
 package com;
 
-class Emp {
+class Emp1 {
 
 	int empID;
 	double empSalary;
@@ -17,7 +17,7 @@ public class GarbageCollectionDemo {
 		System.out.println(runtime.freeMemory());
 
 		for (int i = 0; i < 100000; i++) {
-			Emp emp = new Emp();
+			Emp1 emp = new Emp1();
 			emp.empID = 123;
 			emp.empSalary = 1000;
 		}
