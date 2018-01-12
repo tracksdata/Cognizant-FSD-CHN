@@ -1,0 +1,346 @@
+
+
+Multi Threading
+-----------------
+
+     def : Thread
+     --------------
+     
+     --> sequence of execution.
+     
+     --> unit of one Process.
+     
+     --> shared memory for data
+     
+     def : Process
+     -----------------
+     
+     --> Whole application exe
+     
+     --> group of many threads.
+     
+     --> stand-Alone having Owm memory area.
+     
+     
+     
+     -------------------------------------------------
+     
+     
+     limitations of single threaded appln:
+     -----------------------------------
+     
+     	e.g:
+     	---
+     	
+     	Bank 1                  Bank 2
+     	
+     	Use case: Txr Money:
+     	
+     	steps:
+     	-----
+     	
+     	1. login ( 1 )
+     	2. Enter amount ( 1 )
+     	3. debt From Your Account ( 12 hrs)
+     	4. Credit To other Account ( 12 hrs)
+     	5. Confirmation ( 1)
+     	6. Logout ( 1) 
+     	
+     	24 Hrs 4 Min
+     
+     
+     
+     
+     --> One Task At a time , takes Much time user 
+         wait/ execute other.
+         
+     --> No Muti-User support at a time.    
+     
+     --> Resource sharing.
+     
+     
+     Soln :
+     ------
+     
+     Apply Multi-Threading:
+     
+     
+     Multi-Thgreading:
+     -----------------
+     
+     Split whole application into small units( threads),
+     Each thread will perform the work independent of
+     other.
+     
+     How to implement M.T in Java?
+     ------------------------------
+     
+     		--> use 'java.lang.Thread' class features.
+     
+     
+     
+     Notes:
+     ------
+     
+     --> By default every java Appln have single thread
+         (Main thread)
+     --> Main thread created by JRE, when exe begins.
+     
+     --> Main thread will use main(), to do its own task.
+     
+     --> If main thread finished exe, appln end.
+     
+     --> Main thread have its own 'stack' memory to perform
+         its own work.
+         
+     
+     ---------------
+     
+     --> To have many threads in your appln, you need to create
+         in you code.
+         
+         
+         steps to bring many threads
+         ----------------------------
+         
+         1. create new thread
+         2. Assign  work.
+         3. start thread
+         4. Manage thread Life cycle.
+         5. End thread.
+         
+         
+       a. Create New Thread
+       ---------------------
+       
+         --> create object for 'Thread' class
+         
+	         Thread obj=new Thread();
+	         
+	   b. Assign work
+	   ----------------------
+	      
+	       --> give the in 'run()' method.
+	       
+	   c. Start Thread
+	   --------------------------    
+	   
+	   threadObj.start()
+	   
+	     --> New Stack Memory created for this new thread.
+	     
+	     
+	   d. Manage Thread life
+	   -------------------------
+	   
+	   --> 'Thread scheduler' will manage thread life.
+	   
+	   e. End Thread Life
+	   -------------------------
+	   
+	   --> threadObj.stop() : Dont use
+	   
+	   --> When work gets finish --> End
+	   
+	     
+	     
+--------------------------------------------------------------
+
+
+	 How to schedule threads with 'Thread Scheduler':
+	 ------------------------------------------------
+	 
+	 
+	 use 'Thread' class Methods
+	 
+	 a. static methods
+	 
+	          sleep();
+	          yield();
+	          
+	b. instance methods
+	
+	         setPriority()
+	         join()          
+
+
+-------------------------------------------------------------------
+
+
+
+Thread Synchronization
+-----------------------
+
+    Giving permission to one thread at a time, 
+    to access shared resource.
+    
+    	shared resources are
+    	
+    					--> File 
+    					--> attributes
+    					--> H/W resources
+    					--> Etc
+    
+    How to implement in java?
+    
+    	use 'Synchronized' keyword.
+    	
+    
+    ---------------------------------------------
+    
+    
+    notes:
+    ------
+    
+    
+    --> Every resource(Java Obj), have internal lock facility.
+    
+    --> If thread wants own any resource, should use that lock.
+    
+    --> This locking facility enabled, by 'synchronized' keyword.
+    
+    
+    2 ways to use 'synchronized' kywyword:
+    -------------------------------------
+    
+      a. with methods
+      b. with block code.
+      
+      
+   a. With Methods:
+   -----------------   
+    
+    	--> To Lock the resource Object, till that object's
+    	    behav doing by the Thread.
+    	
+   b. with Blocks:
+   --------------
+       
+        --> To Lock the resource Object,till when doing any
+            block of operation.
+    	
+    	
+  imp note : use 'syncronized' with care, 
+             Use if any changes going to make by the threads 
+             on that.
+             
+   -------------------------------------------------------
+   
+   
+     DeadLocks:
+     -----------
+     
+     T1 having R1           T2 having R2
+     Trying for R2          Trying For R1
+     
+     
+     
+     	How to avoid DeadLocks ?
+     	----------------------
+     	
+     	--> Provide small delay b/w thread starts.
+     	--> Minimize sychronize methods
+     	--> Design programming Logic properly.
+     	
+     	--> Maintain Flag variables to access shared resource.
+     
+     
+     
+     ---------------------------------------------------
+     
+     
+     Inter-Thread Communication ( wait - notify )
+     ----------------------------------------------
+     
+     
+           wait()
+           notify()
+           notifyAll()
+     
+     
+    ------------------------
+    
+    How to interrupt Thread sleep?
+    --------------------------------
+    
+    
+    use : thread.interrupt();
+    
+    
+    ----------------------------------------------------------
+    
+    
+    JDK 1.5 : Concurrency API
+    
+      java.util.concurreny.*;
+      
+   -----------------------------------------------------
+   
+   
+   
+   e.x :
+   
+   
+       Thread 1: Print Odd Numbers
+       
+       Thread 2: print Even Numbers
+       
+       
+       Ques : co-ordinate these threads, print o/p
+       		  as
+       		  
+       		  1
+       		  2
+       		  3
+       		  4  like
+   
+   
+   
+      	
+    
+    
+    
+    
+    
+    
+    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+   
+   
+   
+   
+   
+              
+       	
+    	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	               
+         
+     
+     
+     
+     
+     
+     
