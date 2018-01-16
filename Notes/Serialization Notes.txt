@@ -1,0 +1,9 @@
+Serialization
+-----------------
+-> Writing the state of a object into a strem/file 
+
+-> Any class suppose to be serialized, that class must    implements Serializable (Marker / Tagged ) interface
+-> transient variables cannot be serialized
+
+
+

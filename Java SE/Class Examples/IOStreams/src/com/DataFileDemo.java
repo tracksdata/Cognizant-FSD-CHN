@@ -1,10 +1,6 @@
 package com;
-
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
-import java.io.DataInputStream;
 import java.io.InputStreamReader;
-
 public class DataFileDemo {
 
 	public static void main(String[] args) {
