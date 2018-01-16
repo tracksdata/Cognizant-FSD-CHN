@@ -1,0 +1,240 @@
+
+ java.io.*
+ ----------------
+ 
+ To Read/Write  data to Java
+ 
+ 
+
+ 	Sources of Input/output
+ 	-----------------------
+ 	
+ 	1. Std input/output device
+ 	2. Files
+ 	3. Buffers
+ 	4. Network ports ( Sockets )
+ 	
+ 	
+ 	
+ 	
+ 	Types of Input/Output data
+ 	--------------------------
+ 	
+ 	a. 8-bit data / byte stream / binary data
+ 	b. 16-bit data / Character Stream
+ 	
+ 	
+ 	
+ 	IO Super  Classes
+ 	-------------------
+ 	
+ 	1. InputStream :- To Read 8-bit data
+ 	2. OutputStream :- To Write 8-bit data
+ 	
+ 	3. Reader       :- To Read 16-bit data
+ 	4. Writer       :- To Write 16-bit data
+ 	
+ 	-------------------------------------------------
+ 	
+ 	
+ 	IO Sub-Class
+ 	-------------
+ 	
+ 	Source : File
+ 	--------------
+ 	
+ 	8-bit
+ 	-----
+ 		--> FileInputStream
+ 		--> FileOutputStream
+ 		
+	16-bit
+	------
+		
+		--> FileReader
+		--> FileWriter
+		
+-------------------------------------------------
+		
+	Source: Buffer
+	---------------
+	
+	8-bit
+	------
+	
+	--> BufferedInputStream
+	--> BufferedOutputStream
+	
+	16-bit
+	------
+	
+	--> BufferedReader
+	--> BufferedWriter
+	
+	-------------------------------------------------
+	
+	Object Conversion Classes
+	--------------------------
+	
+	Java Object  <-----> Binary ( 8-bit )
+	
+	--> ObjectInputStream
+	--> ObjectOutputStream
+	
+	Data Type Conversion Classes
+	------------------------------
+	
+	Data Type  <---> Binary ( 8- bit )
+	
+	--> DataInputStream
+	--> DataOutputStream
+	
+	To Print data on any Source:
+	------------------------------
+	
+	--> PrintStream
+	--> PrintWriter
+	
+	By Converting 8-data to 16-bit for reading
+	-----------------------------------------
+	
+	--> InputStreamReader	
+	
+	
+	-----------------------------------
+	
+				8-bit/16-bit stream
+	Source    <------------------->            Target
+				 		
+				 		
+ 	
+----------------------------------------------------
+
+
+  Serialization:
+  ---------------
+  
+  def : Converting Obj's structure(state) into Binary format and
+        store in F.S/DB or Txr to another Java Appln on n/w.
+        
+       why we need?
+       
+       --> To Re-Use imp Objs in Future without re-creating.
+       --> To share Java objs b/w different appln on n/w ( Distributed Java Appln )
+       --> To maintain passive objs on secondary memory. ( imp )
+       
+       
+       How to do?
+       
+       use:
+       
+       		a. ObjectOutputStream ( Serilization )
+       		b. ObjectInputStream  (de-serialization )
+        
+
+
+
+  Marker Interfaces
+  -------------------
+
+
+		--> Interface with no abstract methods.
+		
+		use :
+		
+		--> To relate classes for certain operations.
+		
+
+  Some Marker Interfaces:
+  
+  	--> java.io.Serilizable
+  	--> java.lang.Cloneable
+  	
+  	--> java.rmi.Remote
+  	--> javax.servlet.SingleThreadModel
+  			
+		
+		
+'transient' keyword:
+-------------------------
+
+	transient obj var values are not subject to serialization.
+
+
+	when to use :
+	
+		--> For Secure Obj var
+		--> For unwanted Obj var ( not important to persist/txr )
+		 	
+
+
+
+Notes:
+------
+
+	--> If serializable obj havin non-Serializable obj,
+	    cant perform serilization.
+	    
+	    
+
+
+PrintWriter/PrintStream
+------------------------
+
+To Print/Write any data types on any output source without
+conversion.
+
+---------------------------------------------------------------------------------
+
+
+E.X
+
+
+	1. File with Many Employee Names, 
+	   check whether particular name exist or not.
+   
+	2. Read One Data File and display
+
+		--> Number of Lines
+		--> Number of words
+		--> Number of paragraphs
+		
+		--> Word repeating count if it exist
+		    more than once.
+		    
+	3. A File with many employee details like in this Format
+	   in each line:
+	   
+	   NAME,DEPT,SALARY	 e.g A,IT,3000
+	   						 B,HR,4000
+	   						 C,IT,5000
+	   						 
+	   	Find total salary of each dept.					 			    
+	     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+ 	
+ 	
+ 	
+
