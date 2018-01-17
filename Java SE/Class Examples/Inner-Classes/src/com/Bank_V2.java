@@ -9,9 +9,9 @@ public class Bank_V2 {// final/ default/ public / abstract
 		System.out.println("-- outer class openAccount method");
 	}
 	
-	void test() {
-		// Locker class object cannot be created
-	}
+	/*void test() {
+		grantLockerAcess();
+	}*/
 
 	public void grantLockerAcess() {
 		// Only this method can create Locker class object
