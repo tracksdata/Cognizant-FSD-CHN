@@ -1,0 +1,22 @@
+Nested classes/Inner classes
+------------------------------
+-> A class can be nested with another class to provide 
+   security
+Types of Inner classes
+-------------------------
+Two types
+	-> non static inner classes
+	-> static inner classes
+
+non static inner classes
+---------------------------
+-> can access outer class  instance variables and
+   methods
+Two types
+	-> private inner class
+	-> method level inner class
+
+static inner classes
+-----------------------
+-> Cannot access outer class instance vatiables and methods
+
