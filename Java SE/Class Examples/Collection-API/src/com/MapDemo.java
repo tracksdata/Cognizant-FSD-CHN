@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+
 public class MapDemo {
-	
 	public static void main(String[] args) {
 	
 		HashMap<Integer, Object> hm=new HashMap<>();
