@@ -1,5 +1,5 @@
 Oracle:
-Driver class: oracle.jdbc.driver.OOracleDriver
+Driver class: oracle.jdbc.driver.OracleDriver
 URL:"jdbc:oracle:thin:@localhost:1521:orcl","scott","tiger"
 
 MySQL
