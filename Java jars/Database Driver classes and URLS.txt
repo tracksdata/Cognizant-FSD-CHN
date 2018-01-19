@@ -5,7 +5,7 @@ URL:"jdbc:oracle:thin:@localhost:1521:orcl","scott","tiger"
 MySQL
 ------
 Driver class: com.mysql.jdbc.Driver
-URL: "jdbc:mysql://localhost:1521/test","root","root"
+URL: "jdbc:mysql://localhost:3306/test","root","root"
 
 MS-SQL Server
 -------------
