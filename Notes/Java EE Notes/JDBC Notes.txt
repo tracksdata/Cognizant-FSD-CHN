@@ -1,0 +1,72 @@
+JDBC (Java Database connectivity)
+
+-> JDBC is used to establish database connections from Java    programs to Databases
+
+-> One should have core understanding on following interfaces
+   and classes to understand JDBC
+
+	Interfaces
+	-----------
+	-> Connection
+	-> Stetement   
+	-> PreparedStatement
+	-> ResultSet
+	-> RestltSetMetaData
+	-> DatabaseMetaData
+	-> CallableStatement
+
+	Classes
+	-----------
+	-> DriverManager
+	-> Types
+
+Types of Drivers
+------------------
+Type - 1 -> JDBC - ODBC bridge
+Type - 2 -> OCI (Oracle call interface ) native driver
+Type - 3 -> Thick (Network / protocals) Direct driver
+Type - 4 -> Thin (Pure Java) Direct driver 
+
+
+Type  - 4
+----------
+Oracle
+-------
+oracle.jdbc.driver.Oracle   -> ojdbc14.jar
+
+MySQL
+-----
+mysql.jdbc.driver.Driver   -> mysqlConnecter.jar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
