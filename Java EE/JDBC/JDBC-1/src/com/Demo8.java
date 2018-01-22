@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class Demo6 {
+public class Demo8 {
 	/*
 	 * create table my_student( rno int(10) primary key, name varchar(20), marks
 	 * int(10) );
@@ -20,18 +20,24 @@ public class Demo6 {
 
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "root");
 			Statement stmt = con.createStatement();
-			String qry = "select e.emp_id,e.emp_name,e.salary ";
-
-			ResultSet rs = stmt.executeQuery(qry);
-			while (rs.next()) {
-
-				System.out.println("EMp Id: " + rs.getString(1));
-				System.out.println("Emp Name: " + rs.getString(2));
-				System.out.println("Salary: " + rs.getString(3));
-				System.out.println("Dept Id: " + rs.getString(4));
-				System.out.println("Dept Name: " + rs.getString(5));
-
+			String qry = "select * from my_student where rno=?";
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter Rno to find: ");
+			int rno=sc.nextInt();
+			PreparedStatement ps = con.prepareStatement(qry);
+			ps.setInt(1, rno);
+			ResultSet rs = ps.executeQuery();
+			boolean flag=false;
+			if (rs.next()) {
+				flag=true;
+				System.out.println("Rno: " + rs.getString(1));
+				System.out.println("Name: " + rs.getString(2));
+				System.out.println("Total Marks:" + rs.getString(3));
 				System.out.println("------------------");
+			}
+			
+			if(!flag) {
+				System.out.println("Roll No "+rno+" not exist in DB");
 			}
 
 		} catch (Exception e) {

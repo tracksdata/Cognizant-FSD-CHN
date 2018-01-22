@@ -13,4 +13,42 @@ dept(dept_id)
 );
 
 
+create table dept_details(
+dept_id int(5),
+emp_id int(5) unique
+);
+
+
+alter table dept_details 
+       add constraint FK1h7tbyqselg4ijmypdtuypgb2 
+       foreign key (dept_id) 
+       references dept (dept_id);
+
+
+ select
+        d.dept_id,
+        d.dept_name,
+        e.emp_id,
+        e.emp_name,
+        e.salary 
+    from
+        dept d 
+    left outer join
+        dept_details dd 
+            on d.dept_id=dd.dept_id 
+    left outer join
+        Employee e 
+            on dd.emp_id= e.emp_id 
+    where
+        d.dept_id=10
+
+
+
+
+
+
+
+
+
+
 
