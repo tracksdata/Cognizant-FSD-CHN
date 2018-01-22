@@ -49,11 +49,7 @@ public class Demo3 {
 			int x=ps.executeUpdate();
 			
 			System.out.println(x+" records Updated");
-			
-			
-			
-			
-			
+				
 			
 		} catch (Exception e) {
 			System.out.println("-- Failed due to "+e);

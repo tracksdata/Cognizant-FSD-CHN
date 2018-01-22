@@ -1,0 +1,16 @@
+create table dept(
+dept_id int(5) primary key,
+dept_name varchar(20)
+);
+
+create table employee(
+emp_id int(5) primary key,
+emp_name varchar(20),
+salary float,
+dept_id int(5),
+constraint emp_dept_id foreign key(dept_id)  references 
+dept(dept_id) 
+);
+
+
+
