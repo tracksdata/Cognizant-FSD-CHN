@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE customer SYSTEM "cust.dtd">
+<customer>
+	<custid>CUST001</custid>
+	<custname>Praveen</custname>
+	<age>39</age>
+	<address type="PRESENT"/>
+	
+</customer> 

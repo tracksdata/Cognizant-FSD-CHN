@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE employee[
+<!ELEMENT employee (empid+,empname,salary?)>
+<!ELEMENT empid (#PCDATA)>
+<!ELEMENT empname (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>
+
+<employees>
+	<employee>
+	
+		<empid>11</empid>
+		<empname>Ozvitha</empname>
+		<salary>84363383</salary>
+		
+		
+	</employee>
+	
+				
+</employees>
+
+
+
+
+
+

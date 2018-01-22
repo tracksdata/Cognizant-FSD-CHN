@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT customer (custid+,custname*,age?,address)>
+<!ELEMENT custid (#PCDATA)>
+<!ELEMENT custname (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT address EMPTY>
+<!ATTLIST address type CDATA "Present">
+
+
+
