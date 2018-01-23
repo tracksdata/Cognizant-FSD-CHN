@@ -1,25 +1,44 @@
 Servlet
 -----------
--> A servlet is a small Java program that runs within a Web server. 
--> Servlets receive and respond to requests from Web clients,usually across HTTP, the       HyperText Transfer Protocol.
--> The servlet is a server side component which gives a powerful mechanism for developing    server side application.
--> Servlet is an java class object which implements javax.servlet.Servlet interface directly      or indirectly
+-> A servlet is a small Java program that runs within a Web    server. 
+-> Servlets receive and respond to requests from Web    clients,usually across HTTP, the  HyperText Transfer    Protocol.
+-> The servlet is a server side component which gives a    powerful mechanism for developing    server side    application.
+-> Servlet is an java class object which implements    javax.servlet.Servlet interface directly or indirectly
 
+interface Servlet{
+// 5 methods
+}
+abstract class GenericServlet implements Servlet{
+// overriding only 4 methods
+}
+
+abstract class HttpServlet extends GenericServlet{
+// overiding the methods which was not implemented in GS class
+}
+
+class SrvOne extends HttpServlet{
+
+}
 Servlet Advantage
 -----------------
--> Servlets provide a way to generate dynamic documents that is both easier to write and          faster to run.
--> provide all the powerfull features of JAVA, such as Exception handling and garbage          collection.
+-> Servlets provide a way to generate dynamic documents that    is both easier to write and  faster to run.
+-> provide all the powerfull features of JAVA, such as    Exception handling and garbage collection.
 -> Servlet enables easy portability across Web Servers.
    Servlet can communicate with different servlet and servers.
--> Since all web applications are stateless protocol, servlet uses its own API to maintain        session
--> The servlet is Scalable because, Servlet developed based on thread based server side    technologies.
+-> The servlet is Scalable because, Servlet developed based on    thread based server side technologies.
 
+
+HTTP Protocal
+-------------
+	1. stateless (1.0)
+	2. stateful  (1.1)
 
 Servlet Disadvantage
 -----------------------
--> Designing in servlet is difficult and slows down the application.
--> Writing complex business logic makes the application difficult to understand.
--> You need a Java Runtime Environment on the server to run servlets. CGI is a completely         language independent protocol, so you can write CGIs in whatever languages you have          available (including Java if you want to).
+-> Designing in servlet is difficult and slows down the    application.
+-> Writing complex business logic makes the application    difficult to understand.
+-> You need a Java Runtime Environment on the server to run    servlets.
+-> CGI is a completely language independent protocol, so you    can write CGIs in whatever languages you have             available (including Java if you want to).
 
 
 Servlet Life Cycle
