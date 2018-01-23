@@ -41,6 +41,27 @@ Servlet Disadvantage
 -> CGI is a completely language independent protocol, so you    can write CGIs in whatever languages you have             available (including Java if you want to).
 
 
+Sending Request to A Servlet first time
+--------------------------------------------
+1. Web container verifies urlpattern name in DD
+2. If any Url pattern name is matching, then Corresponding
+   Servlet class object is created, if it was not created
+   earlier
+3. WC starts calling life cycle methods of a servlet
+
+
+Sending requst to same servlet second time
+-------------------------------------------
+-> WC will not create Servlet object
+-> WC starts calling service method
+ 
+
+Note:
+------
+Servlet object get created only one time in the life cycle of
+a servlet for single or multiple requstes till it is destroyed
+
+
 Servlet Life Cycle
 ---------------------
 -> A servlet life cycle can be defined as the entire process from its creation till the   destruction. The following are the paths followed by a servlet.
