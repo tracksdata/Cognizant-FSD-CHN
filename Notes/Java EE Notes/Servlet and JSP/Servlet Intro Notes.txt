@@ -1,0 +1,54 @@
+Servlet
+-----------
+-> A servlet is a small Java program that runs within a Web server. 
+-> Servlets receive and respond to requests from Web clients,usually across HTTP, the       HyperText Transfer Protocol.
+-> The servlet is a server side component which gives a powerful mechanism for developing    server side application.
+-> Servlet is an java class object which implements javax.servlet.Servlet interface directly      or indirectly
+
+Servlet Advantage
+-----------------
+-> Servlets provide a way to generate dynamic documents that is both easier to write and          faster to run.
+-> provide all the powerfull features of JAVA, such as Exception handling and garbage          collection.
+-> Servlet enables easy portability across Web Servers.
+   Servlet can communicate with different servlet and servers.
+-> Since all web applications are stateless protocol, servlet uses its own API to maintain        session
+-> The servlet is Scalable because, Servlet developed based on thread based server side    technologies.
+
+
+Servlet Disadvantage
+-----------------------
+-> Designing in servlet is difficult and slows down the application.
+-> Writing complex business logic makes the application difficult to understand.
+-> You need a Java Runtime Environment on the server to run servlets. CGI is a completely         language independent protocol, so you can write CGIs in whatever languages you have          available (including Java if you want to).
+
+
+Servlet Life Cycle
+---------------------
+-> A servlet life cycle can be defined as the entire process from its creation till the   destruction. The following are the paths followed by a servlet.
+
+
+-> The servlet is initialized by calling the init() method.
+-> The servlet calls service() method to process a client's request.
+-> The servlet is terminated by calling the destroy() method.
+   Finally, servlet is garbage collected by the garbage collector of the JVM.
+
+The init() Method
+--------------------
+-> The init method is called only once. It is called only when the servlet is created, and not    called for any user requests afterwards. So, it is used for one-time initializations.
+
+The service() Method
+----------------------
+-> The service() method is the main method to perform the actual task. The servlet container    (i.e. web server) calls the service() method to handle requests coming from the client        (browsers) and to write the formatted response back to the client.
+-> Each time the server receives a request for a servlet, the server spawns a new thread and    calls service. The service() method checks the HTTP request type (GET, POST, PUT, DELETE,    etc.) and calls doGet, doPost, doPut, doDelete, etc. methods as appropriate.
+
+The destroy() Method
+----------------------
+-> The destroy() method is called only once at the end of the life cycle of a servlet. This    method gives your servlet a chance to close database connections, halt background threads,    write cookie lists or hit counts to disk, and perform other such cleanup activities.
+-> After the destroy() method is called, the servlet object is marked for garbage collection.
+
+ 
+
+
+
+
+ 
