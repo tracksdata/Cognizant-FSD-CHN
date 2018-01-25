@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  
+  <servlet>
+    <servlet-name>SrvOne</servlet-name>
+    <servlet-class>com.SrvOne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SrvOne</servlet-name>
+    <url-pattern>/SrvOne</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>MyFilter</filter-name>
+    <filter-class>com.MyFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>MyFilter</filter-name>
+    <url-pattern>/SrvOne</url-pattern>
+  </filter-mapping>
+</web-app>
