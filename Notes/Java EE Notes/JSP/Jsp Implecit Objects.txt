@@ -1,0 +1,17 @@
+
+
+JSP Implicit Objects
+------------------------------------
+request		HttpServletRequest
+response	HttpServletResponse
+session		HttpSession
+config		ServletConfig
+application	ServletContext
+out		JspWriter
+page		java.lang.Object
+pageContext	PageContext
+-------------------------------------
+exception	java.lang.Thowable
+
+
+
