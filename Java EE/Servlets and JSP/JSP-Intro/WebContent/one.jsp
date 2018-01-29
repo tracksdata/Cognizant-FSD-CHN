@@ -1,8 +1,6 @@
 <%@page import="java.util.Date,java.io.*" %>
 <%@page import ="java.awt.*" %>
 
-<h1>New:  ${pageContext.request.contextPath} </h1>
-<h1><a href='${pageContext.request.contextPath}/jsp/test.jsp'>Test JSP</a> </h1>
 <h1>Date: <%=new Date() %></h1>
 <h1>Welcome to JSP</h1>
 <button>Click Me</button> <br>

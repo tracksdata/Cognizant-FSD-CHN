@@ -7,7 +7,7 @@ Oracle
 ---------
 Driver class: oracle.jdbc.driver.OracleDriver
 URL:"jdbc:oracle:thin:@localhost:1521:orcl","scott","tiger"
-jar: For JDBC 4 and above ojdbc6.jar
+jar: For JDBC 4 and above ojdbc8.jar
 
 MySQL
 ------
