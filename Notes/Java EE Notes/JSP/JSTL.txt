@@ -1,0 +1,21 @@
+JSTL  (JAVA Server Tag Library)
+-------------------------------------
+
+Custom tag Library -> basic understanding is needed
+
+4 types
+-> Core tags  
+-> SQL tags
+-> XML tags
+-> FMT tags (data formating and conversions)
+
+ needed two jars
+------------------
+1. jstl.jar
+2. standard.jar
+
+
+
+
+
+
