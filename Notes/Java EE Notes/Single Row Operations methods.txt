@@ -7,9 +7,21 @@ delete
 update
 merge
 evict
+clear
+close
+
 
 DRL Operations
-get
-load
+
+fetching Single Rwo Operations
+
+1. get  (Eager fetching)
+2. load (Lazy fetching)
+
+
+
+
+
+
 
 
