@@ -1,0 +1,15 @@
+
+DML Operations
+------------------
+save
+saveOrUpdate
+delete
+update
+merge
+evict
+
+DRL Operations
+get
+load
+
+
