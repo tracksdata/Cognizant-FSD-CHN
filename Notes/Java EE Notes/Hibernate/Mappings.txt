@@ -1,0 +1,7 @@
+Hibernate Mappings
+-------------------
+1. One to One
+2. One to Many (Collections)
+3. many to One 
+4. Many to Many (?)
+
