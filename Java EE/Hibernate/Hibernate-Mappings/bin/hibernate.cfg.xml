@@ -39,6 +39,12 @@
  		
  		<mapping class="com.onetomany.Employee"/>
  		<mapping class="com.onetomany.Department"/>
+ 		
+ 		<mapping class="com.onetomany.College"/>
+ 		<mapping class="com.onetomany.University"/>
+ 		
+ 		<mapping class="com.manytomany.Student"/>
+ 		<mapping class="com.manytomany.Course"/>
 
          
 
