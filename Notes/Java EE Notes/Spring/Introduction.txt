@@ -1,0 +1,23 @@
+Log4J API (Loggers)
+----------------------
+
+
+
+
+
+Spring Framework
+-----------------
+1. Core (IOC)
+2. AOP (Aspect Oriented Programing)
+3. DAO (Data Access Object)
+	-> Spring-JDBC Template
+	-> Spring ORM Integration (Hibernate)
+4. Spring WEB
+	-> Spring-MVC
+	-> Spring Web Flow
+5. Spring Rest
+6. Spring Security
+7. Spring Batch 
+... etc
+
+
