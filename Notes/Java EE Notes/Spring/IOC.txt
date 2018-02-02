@@ -1,0 +1,11 @@
+Dependency Injection and IOC
+
+Types of Objects
+------------------
+Two Types
+	-> dependency
+	-> dependent
+
+
+
+
