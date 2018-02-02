@@ -13,7 +13,6 @@
 <property name="empName" value="Praveen"/>
 <property name="salary" value="348384"/>
 </bean>
-
 <bean id="emp2" class="com.Employee">
 
 <property name="empId" value="11"/>

@@ -11,9 +11,9 @@ public class Test {
 		
 		Employee e1=(Employee)ac.getBean("emp1");
 		Employee e2=(Employee)ac.getBean("emp2");
-		Employee e3=(Employee)ac.getBean("emp3");
-
 		
+
+		//System.out.println(e1.getEmpId());
 		
 		e1.display();
 		e2.display();

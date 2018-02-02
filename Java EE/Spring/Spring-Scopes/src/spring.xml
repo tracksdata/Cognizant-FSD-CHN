@@ -7,21 +7,9 @@
 
 
 
-<bean id="emp1" class="com.Employee">
-
-<property name="empId" value="10"/>
-<property name="empName" value="Praveen"/>
-<property name="salary" value="348384"/>
-</bean>
-<bean id="emp2" class="com.Employee">
-
-<property name="empId" value="11"/>
-<property name="empName" value="Ozvitha"/>
-<property name="salary" value="847834"/>
-
-</bean>
-<bean id="emp3" class="com.Employee"/>
-
+<bean id="emp1" class="com.Employee" scope="singleton"/>
+<bean id="emp2" class="com.Employee" scope="prototype"/>
+<bean id="emp3" class="com.Employee" scope="prototype"/>
 
 
 

@@ -6,15 +6,14 @@ public class Employee {
 	private String empName;
 	private double salary;
 
-	public void display() {
-		System.out.println("EMp Id: " + empId);
-		System.out.println("Name: " + empName);
-		System.out.println("Salary: " + salary);
+	private Department dept; // has 'A'
+
+	public Department getDept() {
+		return dept;
 	}
 
-	public Employee() {
-
-		System.out.println("-- Employee Object Created");
+	public void setDept(Department dept) {
+		this.dept = dept;
 	}
 
 	public int getEmpId() {
@@ -22,12 +21,12 @@ public class Employee {
 	}
 
 	public void setEmpId(int empId) {
-		System.out.println("---- empId setter got called");
+
 		this.empId = empId;
 	}
 
 	public String getEmpName() {
-		
+
 		return empName;
 	}
 
