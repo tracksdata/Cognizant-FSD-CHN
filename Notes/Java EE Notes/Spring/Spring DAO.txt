@@ -1,0 +1,23 @@
+SPRING DATA ACCESS
+----------------------
+	-> Spring JDBC
+	-> Spring ORM
+
+
+Connection Pooping
+-------------------
+-> A pool of connection interface objects available in a 
+   specified memory area, then get connection objs from pool
+   and return back them to the pool after usage
+
+Ex: apache DBCP (Databade connection pool)
+--------------------------------------------
+
+-> to install DBCP with SPring DAO, just configure jar of DBCP
+
+
+
+
+
+
+

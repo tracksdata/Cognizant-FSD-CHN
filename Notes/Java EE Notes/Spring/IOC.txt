@@ -3,9 +3,13 @@ Dependency Injection and IOC
 Types of Objects
 ------------------
 Two Types
-	-> dependency
+	-> dependency (top level classes like dao)
 	-> dependent
 
+-> Dependent depends on Dependency
 
+
+Shoping Cart
+--------------
 
 
