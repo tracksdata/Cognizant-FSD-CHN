@@ -1,9 +1,5 @@
 package com;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
