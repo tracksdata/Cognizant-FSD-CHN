@@ -13,7 +13,7 @@ Steps
 
 Configuring the project
 ------------------------
-1. Provide ServletInitializer class to configure    DispatcherServlet controller and url mappings
+1. Provide ServletInitializer class to configure       DispatcherServlet controller and url mappings
 2. Provide WebConfig class to configure Spring MVC web 
    related configurations like Viewresolvers etc
 3. Provide AppConfig class to configure non web congiguration
