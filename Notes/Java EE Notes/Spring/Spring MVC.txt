@@ -2,3 +2,6 @@ Spring WEB
 -----------
 	-> Spring MVC (Model view controller)
 
+  -> built-in controller -> DispatcherServlet
+
+

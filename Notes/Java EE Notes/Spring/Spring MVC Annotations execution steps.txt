@@ -1,0 +1,31 @@
+Steps
+-----------
+-> Any request ends with .htm goes to a class    ServletInitializer
+-> Spring verifies a method getServletMappings, and verifies     with given requet url.
+-> If given request url is matching then       getServletConfigClasses methos gets executed on same class.
+-> What ever the classes returning in getServletConfigClasses 
+   method that class gets executed. (WebConfig)
+-> We have configured WebConfig.class to the       getServletConfigClasses method as return type
+-> Spring container executes class WebConfig class
+-> Spring container verifies package component scan and       executes the requested mapping if any controller class
+   is mapped with it. 
+                        ------ * ------
+
+Configuring the project
+------------------------
+1. Provide ServletInitializer class to configure    DispatcherServlet controller and url mappings
+2. Provide WebConfig class to configure Spring MVC web 
+   related configurations like Viewresolvers etc
+3. Provide AppConfig class to configure non web congiguration
+   classes like service, dao and entitity classes etc
+
+
+
+
+
+
+
+
+
+
+ 
