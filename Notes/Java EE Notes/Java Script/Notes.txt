@@ -1,0 +1,96 @@
+Java Script
+----------------
+.js language (script based)
+ref: crackford.com
+
+-> script based langauge on web pages in browser envi
+   +
+   its a server side programing lang on Node.Js
+-> Mobile appli developemnt
+
+Features
+---------
+-> functional / object -oriented programing lang
+-> data types => dynamic  -> var
+-> Clousers support ==> Asyc programing (call back function)
+-> Single Threaded language => supports concurency
+-> Non-Blocking IO
+
+-----------------------------------------------------
+.js language is ECMA Script Spec (ES)
+-----------------------------------------------------
+How to use .js language?
+
+
+=> using 'js engine'
+
+Browser envi
+--------------
+	a. Chrome ==> V8 Engine (c++)
+	b. Firefox ==> Rihino (Java)
+	c. IE ==> Chakra 
+	d. Safari ==> Nitro
+
+non browser envi
+----------------
+	a. Node.js ==> V8 Engine
+	b. JVM	   ==> Nashrom
+	c. MongoDB
+	d. Apache Cloud 
+	e.  etc ..
+
+
+.js Topics
+-----------------
+1. Data Types
+2. Execition-Context(s) and Context Chaining
+3. Functions -> in Depth
+4. 'this' key word
+5. Closures
+6. Inheritance
+7. Objects i  depth
+
+8. ES- 2015 /16 New features
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
