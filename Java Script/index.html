@@ -4,9 +4,82 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">  
+   
+   <script type="text/javascript">
+   
+   
+    function test(){   
+
+    var fname= document.getElementById("fname").value;
+    var lname=document.getElementById("lname").value;
+       
+        if(fname==""||fname==" "){
+            s1.msg="Must Provide First Name";    
+        }else{
+            s1.msg=fname;
+        }
+        if(lname==""||lname==" "){
+            s2.msg="Must Provide Last Name";    
+        }else{
+            s2.msg=lname;
+        }
+        
+
+        document.getElementById("s1").innerHTML=s1.msg;
+        document.getElementById("s2").innerHTML=s2.msg;
+    }
+
+
+   function test1(){
+ 
+    var fname= document.getElementById("fname").value;
+    document.getElementById("lname").value=fname;
+
+   }
+   </script>     
+   
+   
     </head>
     <body>
    <h2>JS Learn_</h2> <hr/>     
-    <script src="/4.this-keyword.js"></script>
-    </body>
+   
+
+
+<table cellspacing="5" cellpadding="5">
+  <tr>
+    <td>
+        First Name
+    </td>
+    <td>
+        <input id="fname" onblur="test1()"></span>  
+    </td>
+    <td>
+            <span id="s1"></span>
+    </td>
+
+  </tr>
+
+  <tr>
+        <td>
+            Fast Name
+        </td>
+        <td>
+            <input id="lname">   
+        </td>
+        <td>
+                <span id="s2"></span>
+        </td>
+    
+      </tr>
+
+  <tr>
+      <th colspan="2">
+            <button onclick="test()">Click Here</button>
+      </th>
+  </tr>
+    
+</table>
+ 
+
+</body>
 </html>

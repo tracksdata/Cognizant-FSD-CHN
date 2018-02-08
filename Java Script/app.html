@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+<script type="text/javascript">
+function changeImages(col){
+   // alert('Selected COlor: '+col.value);
+   var path="Cars/b_"+col.value+".jpg";
+    document.getElementById("cars").innerHTML="<img border=1 height='150' width='250' src="+path+">";
+}
+
+</script>
+</head>
+<body>
+
+    <div align="center" id="cars">
+        <img border=1 src="/Cars/b_blue.jpg" height="150" width="250">
+    </div>
+
+    <div align="center">
+        Blue<input name="c" type="radio" value="blue" onclick="changeImages(this)">
+        Red<input name="c" type="radio" value="red" onclick="changeImages(this)">
+        White<input name="c" type="radio" value="white" onclick="changeImages(this)">
+    </div>
+
+
+</body>
+</html>
