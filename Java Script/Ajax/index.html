@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+<script type="text/javascript">
+
+function sendInfo(){
+   // document.parentNode.responseText("table");
+    var xhttp;
+    var url="http://localhost:9090/Spring-Rest/book/14";
+    if (window.XMLHttpRequest) {
+      // code for modern browsers
+      xhttp = new XMLHttpRequest();
+      } else {
+      // code for IE6, IE5
+      xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("data").innerHTML = this.responseText; // JSON- String 
+      var jsonObj=JSON.parse(this.responseText);
+
+      document.getElementById("bid").value=jsonObj.id;
+      document.getElementById("btitle").value=jsonObj.title;
+      document.getElementById("bauthor").value=jsonObj.author;
+
+      }else{
+        document.getElementById("data").innerHTML = "Some issue while loding data from server";
+      }       
+
+     
+    };
+
+    xhttp.open("GET",url, true);
+    xhttp.send();  
+} 
+
+
+</script>
+
+</head>
+<body>
+<h2>Ahax Demo_</h2> <hr/>    
+<div id="data">
+Default Data
+</div>
+
+<button onclick="sendInfo()">Load Data</button>
+<br>
+ID: <input id="bid"> <br>
+NAME: <input id="btitle"> <br>
+AUTHOR:<input id="bauthor"> <br>
+
+</body>
+</html>
