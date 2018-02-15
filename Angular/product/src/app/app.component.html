@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body class='container'>
+
+<h2>Name: {{name}} </h2>   
+<h2>EmpName:  {{empName}} </h2>
+<h2>Age: {{age}}</h2>
+<hr/>
+<input #s1 [value]="empName" placeholder="Value Binding" /> <br>
+<input #s2 (keyup)="testFun(s2)" placeholder="Event Binding"/> <br>
+<input #s3  [(ngModel)]="empName" placeholder="2-way Binding"/> <br>
+<button (click)="testFun(s2)"  >Click Here</button> <br>
+Hide/Unhide: <input type="checkbox" [(ngModel)]="flag"> <br>
+<div>
+   <h2 > Data to be displayed </h2>
+</div>
+
+<div>
+    <h2>{{msg.value}} </h2>
+</div>
+<div>
+    <h2>EmpName: {{empName}} </h2>
+</div>
+
+</body>
+</html>

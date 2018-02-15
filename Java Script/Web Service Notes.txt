@@ -1,2 +1,44 @@
 Web Service
 ------------
+	-> SOAP (Simple obj access protocal)
+	-> REST( Representation state transfer)
+		Text (JSON-> JS Obj Notation)
+		XML
+
+REST
+-----
+1. JAX-RS 
+2. Spring-Rest
+
+Producer
+Consumer
+
+Rest HTTP Request methods
+GET -> load data from DB
+POST -> save data into DB
+PUT -> Update data into DB
+DELETE -> delete data from DB
+
+
+
+
+
+
+
+
+
+
+
+
+ emps=[
+  emp{
+	id:10,
+	name:'Praveen',
+	age:87
+   },
+   emp{
+	id:11,
+	name:'Jamwa',
+	age:77
+   }
+ ]
