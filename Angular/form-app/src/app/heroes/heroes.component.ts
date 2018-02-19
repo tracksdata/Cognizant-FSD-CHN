@@ -1,28 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
 })
-export class HeroesComponent implements OnInit {
+export class HeroesComponent {
 
-  hero: Hero = {
-    id: 10,
-    name: 'Windstorm'
-  };
+  heroes = HEROES;
+ clicked=false;
+  selectedHero:Hero;
 
-  active=true;
-  submited=false;
-  onSubmit(){
-    this.submited=true;
-  }
-
-
-  constructor() { }
-
-  ngOnInit() {
+  myFun(hero:Hero){
+    this.clicked=true;
+    this.selectedHero=hero;
   }
 
 }

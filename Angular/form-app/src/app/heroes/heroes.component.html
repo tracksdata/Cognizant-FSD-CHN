@@ -4,52 +4,23 @@
   <title>Document</title>
 </head>
 <body>
-  <h2>Submited: {{submited}}</h2> 
-  <div [hidden]='submited'>
-      <div class='form-group'>
-        <h2>Hero Details</h2>
-        <form (ngSubmit)='onSubmit()' #heroFrom='ngForm'>
-          <div>
-              <label for="Hero Id: ">Hero Id</label>
-          </div>
-          <div>
-            <input name='hid' required type='text' #heroid=ngModel class="form-control" [(ngModel)]='hero.id'/>
-          </div>
-          <div [hidden]="heroid.valid">Hero Id Must be Provide</div>
-          <div>
-              <label for="Hero Name">Hero Name</label>
-          </div>
-          <div>
-              <div>
-                  <input name='hnme' required #heroname=ngModel [(ngModel)]='hero.name' type='text' class="form-control"/>
-              </div>
-              <div [hidden]="heroname.valid">Hero Name Must be Provide</div>
-          </div>
-          <br/>
-          <div>
-            <button type="submit" [disabled]='!heroFrom.form.valid'  class='btn btn-default'>Submit</button>
-            <button type="button" class='btn btn-default'>New Hero</button>
-          </div>
+    <h2>My Heroes</h2>
+    <ul *ngFor="let hero of heroes" (click)='myFun(hero)'>
+     
+        <span class="badge badge-secondary badge-pill">{{hero.id}}</span> {{hero.name}}
+   </ul>
 
-        </form>
+      <hr/>
 
+<div *ngIf="selectedHero">
+    <h2>{{ selectedHero.name | uppercase }} Details</h2>
+    <div>
+        <label>name:
+          <input  [(ngModel)]="selectedHero.name" placeholder="name">
+        </label>
       </div>
-
-  </div>
-<hr/>
-
-<div [hidden]='!submited'>
-  <h1>Following Data has submied</h1> <hr/>
-
-  <div><h2>  Id: {{hero.id}}</h2>  </div>
-  <div><h2>  Name: {{hero.name}}</h2>  </div>
-
-  <div>
-      <button class='btn btn-default' type='button' (click)='submited=false'>Edit</button>
-    </div>
 </div>
- 
-<hr/>
+
 
 </body>
 </html>
