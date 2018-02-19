@@ -4,10 +4,12 @@
 <head></head>
 <body class='container'>
 
+
 <h2>Name: {{name}} </h2>   
 <h2>EmpName:  {{empName}} </h2>
 <h2>Age: {{age}}</h2>
 <hr/>
+
 <input #s1 [value]="empName" placeholder="Value Binding" /> <br>
 <input #s2 (keyup)="testFun(s2)" placeholder="Event Binding"/> <br>
 <input #s3  [(ngModel)]="empName" placeholder="2-way Binding"/> <br>

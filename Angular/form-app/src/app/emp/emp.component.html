@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  
+ <h2>{{testJson}} </h2> 
+ 
+<table border="1" align='center'>
+<tr>
+    <th>Employee Id</th>
+    <th>Employee Name</th>
+    <th>Salary</th>
+</tr>
+
+<tr *ngFor="let emp of emps">
+  <td> {{emp.empId}}</td>
+  <td> {{emp.empName}}</td>
+  <td> {{emp.salary}}</td>
+</tr>
+
+</table>
+
+
+
+</body>
+</html>

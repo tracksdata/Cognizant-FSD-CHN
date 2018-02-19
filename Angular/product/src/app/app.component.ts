@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, Injectable } from '@angular/core';
+import { BookComponent } from './book/book.component';
 
 @Component({
   selector: 'app-root',
@@ -13,15 +14,20 @@ export class AppComponent {
  age:number;
  msg:string;
  flag:boolean;
+ book:BookComponent;
+
+ 
  constructor(){
    this.empName="James";
    this.age=45;
    this.flag=true;
    this.actionName="Get";
+  // this.book=book;
  }
 
  testFun(s2:string){
   this.msg=s2;
+  //this.book.testing();
  }
 
 

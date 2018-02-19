@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class='container'>
+
+</div>
+
+<div *ngIf="active">
+    <input type='checkbox' [(ngModel)]='result'>Got Married?<br>
+
+    <div [hidden]='!result'>
+         <h2> How Many Children? </h2>
+    </div>
+
+<div *ngFor="let s1 of friends">
+    <h2><li> {{s1}} </li> </h2>
+</div>
+
+<hr/>
+
+<div *ngFor="let emp of emps">
+    <h3> Id: {{emp.id}}</h3>
+    <h3> Name: {{emp.name}}</h3>
+    <h3> Salary: {{emp.salary}}</h3>
+    <hr/>
+</div>
+</div>
+
+<hr/>
+<app-heroes></app-heroes>

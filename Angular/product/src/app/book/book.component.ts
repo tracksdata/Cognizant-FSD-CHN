@@ -9,6 +9,9 @@ export class BookComponent implements OnInit {
 
   constructor() { }
 
+  testing(){
+    alert('--- testing');
+  }
   ngOnInit() {
   }
 
