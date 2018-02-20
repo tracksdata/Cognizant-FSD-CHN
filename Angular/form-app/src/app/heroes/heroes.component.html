@@ -1,27 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Document</title>
-</head>
-<body>
-    <h2>My Heroes</h2>
-    <ul *ngFor="let hero of heroes" (click)='myFun(hero)'>
-     
-        <span class="badge badge-secondary badge-pill">{{hero.id}}</span> {{hero.name}}
-   </ul>
+<h1>Products List</h1>
+<ul>
+  <li *ngFor="let prod of products">
+      <span>{{prod.id}}</span>
+      <span>{{prod.name}}</span>
+  </li>
+</ul>
 
-      <hr/>
+<h2>My Heroes</h2>
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes"
+    [class.selected]="hero === selectedHero"
+    (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
 
 <div *ngIf="selectedHero">
-    <h2>{{ selectedHero.name | uppercase }} Details</h2>
-    <div>
-        <label>name:
-          <input  [(ngModel)]="selectedHero.name" placeholder="name">
-        </label>
-      </div>
+
+  <h2>{{ selectedHero.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{selectedHero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedHero.name" placeholder="name">
+    </label>
+  </div>
+
 </div>
-
-
-</body>
-</html>
 

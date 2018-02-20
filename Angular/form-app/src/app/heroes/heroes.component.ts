@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HEROES } from '../mock-heroes';
-
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -12,10 +11,12 @@ export class HeroesComponent {
   heroes = HEROES;
  clicked=false;
   selectedHero:Hero;
-
   myFun(hero:Hero){
     this.clicked=true;
     this.selectedHero=hero;
   }
 
+   
+
+  
 }
