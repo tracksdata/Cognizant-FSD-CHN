@@ -1,11 +1,21 @@
-<div>
+<div [hidden]='findResult'>
     <form>
       <input placeholder="Book Id" #id/> <br>
       <button class="btn btn-default" (click)='findBook(id.value)'>Find Book</button>
     </form>
   </div>
 
-<h1>Name: {{name}}</h1>
+<div [hidden]='!findResult'>
+
+    <form>
+        <input class='form-control' [(ngModel)]="oldBook.id" placeholder="Book-id" name="id">
+        <input class='form-control' [(ngModel)]="oldBook.title" placeholder="title" name="title">
+        <input class='form-control' [(ngModel)]="oldBook.author" placeholder="author" name="author">
+        <button class='btn btn-primary' (click)="updateBook(oldBook)">Update Book</button>   
+</form>
+
+
+</div>
 
             
 

@@ -11,12 +11,13 @@ export class FindbookComponent implements OnInit {
 
   constructor(private bookService:BookService) { }
 
+
   findBook(id:number){
     this.findResult=true;
     this.bookService.getBook(id).then(book=>this.book=book);
   }
 findResult=false;
-public book:Book;
+public book=new Book();
   ngOnInit() {
      
   }

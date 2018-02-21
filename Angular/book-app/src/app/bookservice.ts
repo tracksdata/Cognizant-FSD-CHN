@@ -40,8 +40,10 @@ export class BookService {
   }
 
   updateBook(book: Book): Promise<Book> {
+    const url = `${this.booksUrl}/book/${book.id}`;
+    console.log('--service: id: '+book.id+" and title "+book.title);
     return this.http
-      .post(this.booksUrl + "/book", JSON.stringify(book), { headers: this.headers })
+      .put(url,book,{ headers: this.headers })
       .toPromise()
       .then(() => book)
       .catch(this.handleError);

@@ -10,7 +10,7 @@ import { Book } from '../book';
 export class ListbooksComponent implements OnInit {
 
   constructor(private bookService:BookService) { }
-  
+
  public books:Book[];
 
   ngOnInit() {

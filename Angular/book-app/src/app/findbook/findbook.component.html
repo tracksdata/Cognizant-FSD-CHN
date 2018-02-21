@@ -1,10 +1,12 @@
 <div [hidden]='findResult'>
   <form>
-    <input placeholder="Book Id" #id/> <br>
-    <button class="btn btn-default" (click)='findBook(id.value)'>Find Book</button>
+    <input placeholder="Book Id" #s1/> <br>
+    <button class="btn btn-default" (click)='findBook(s1.value)'>Find Book</button>
 
   </form>
 </div>
+<h1>Name: {{name}}</h1>
+
 <div class="container mt-4" [hidden]='!findResult'>
     <table cellpadding='5'>
       <tr>
