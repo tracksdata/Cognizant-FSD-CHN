@@ -1,0 +1,11 @@
+
+<div class='form-group mt-4'>
+    <form>
+            <input class='form-control' [(ngModel)]="newBook.id" placeholder="Book-id" name="id">
+            <input class='form-control' [(ngModel)]="newBook.title" placeholder="title" name="title">
+            <input class='form-control' [(ngModel)]="newBook.author" placeholder="author" name="author">
+            <button class='btn btn-primary' (click)="saveBook(newBook)">Save Book</button>   
+    </form>
+
+</div> <hr/>
+
