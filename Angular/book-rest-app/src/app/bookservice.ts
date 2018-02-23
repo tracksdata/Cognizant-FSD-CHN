@@ -5,6 +5,7 @@ import { Book } from './book';
 export class BookService{
 
     apiUrl='';
+    private headers = new Headers({ 'Content-Type': 'application/json' });
     constructor(private http:Http){}
 
     listAllBooks():Promise<Book[]>{

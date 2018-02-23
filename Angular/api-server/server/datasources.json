@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "ds131109.mlab.com",
+    "port": 31109,
+    "url": "mongodb://user2:password123@ds131109.mlab.com:31109/cts",
+    "database": "cts",
+    "password": "password123",
+    "name": "mongodb",
+    "user": "user2",
+    "connector": "mongodb"
+  }
+}
