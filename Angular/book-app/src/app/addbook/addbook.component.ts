@@ -19,8 +19,8 @@ saveBook(book:Book){
 }
 
 clearFields(){
-  this.newBook.id=undefined;
-  this.newBook.title='';
+  this.newBook.bookId=undefined;
+  this.newBook.bookName='';
   this.newBook.author='';
 }
 

@@ -20,8 +20,8 @@ export class UpdatebookComponent implements OnInit {
   }
 
   updateBook(book:Book){
-    
-    console.log('---> Id:'+book.id+"--> name: "+book.title);
+
+    console.log('---> Id:'+book.bookId+"--> name: "+book.bookName);
     this.bookService.updateBook(book).then(tobeUpdatedBook=>this.tobeUpdatedBook=tobeUpdatedBook);
   }
 

@@ -1,15 +1,15 @@
 
-<div class="container mt-4">
-  <table cellpadding='5'>
+<div class="container mt-4 ">
+  <table class='table table-striped'>
     <tr>
-      <th>Book Id</th>
+      <th>Id</th>
       <th>Book Name</th>
       <th>Author</th>
     </tr>
 
     <tr *ngFor="let book of books">
         <td>{{book.id}}</td>
-        <td>{{book.title}}</td>
+        <td>{{book.bookName}}</td>
         <td>{{book.author}}</td>
     </tr>
   </table>

@@ -7,7 +7,7 @@
 </div>
 
 <div class="container mt-4" [hidden]='!findResult'>
-    <table cellpadding='5'>
+    <table cellpadding='5' class='table table-striped'>
       <tr>
         <th>Book Id</th>
         <th>Book Name</th>
@@ -15,8 +15,8 @@
       </tr>
   
       <tr>
-          <td>{{book.id}}</td>
-          <td>{{book.title}}</td>
+          <td>{{book.bookId}}</td>
+          <td>{{book.bookName}}</td>
           <td>{{book.author}}</td>
       </tr>
     </table>

@@ -7,7 +7,7 @@ import { Book } from './book';
 @Injectable()
 export class BookService {
   private headers = new Headers({ 'Content-Type': 'application/json' });
-  private booksUrl = 'http://localhost:9090/Spring-Rest';
+  private booksUrl = 'http://localhost:3000/api/books';
 
   getMessage():string{
     return "Message from Service";
@@ -15,15 +15,16 @@ export class BookService {
   constructor(private http:Http) { }
 
   getBooks(): Promise<Book[]> {
-    return this.http.get(this.booksUrl + "/book")
+    return this.http.get(this.booksUrl)
       .toPromise()
       .then(response => response.json() as Book[])
       .catch(this.handleError);
       
   }
 
-  getBook(id: number): Promise<Book> {
-    const url = `${this.booksUrl}/book/${id}`;
+  getBook(id: string): Promise<Book> {
+    const url = `${this.booksUrl}/${id}`;
+    alert('--- in get book: '+url);
     return this.http.get(url)
       .toPromise()
       .then(response => response.json() as Book)
@@ -34,14 +35,15 @@ export class BookService {
   saveBook(book: Book): Promise<Book> {
     console.log('----- Service: '+book);
     return this.http
-      .post(this.booksUrl + "/book", book, { headers: this.headers })	
+      .post(this.booksUrl, book, { headers: this.headers })	
       .toPromise()
       .catch(this.handleError);
   }
 
+
   updateBook(book: Book): Promise<Book> {
-    const url = `${this.booksUrl}/book/${book.id}`;
-    console.log('--service: id: '+book.id+" and title "+book.title);
+    const url = `${this.booksUrl}/${book.id}`;
+    console.log('--service: id: '+book.id+" and title "+book.bookName);
     return this.http
       .put(url,book,{ headers: this.headers })
       .toPromise()
@@ -49,9 +51,10 @@ export class BookService {
       .catch(this.handleError);
   }
 
-  deleteBike(book: Book): Promise<void> {
-    const url = `${this.booksUrl}/book/${book.id}`;
-    return this.http.get(url, { headers: this.headers })
+  deleteBook(book: Book): Promise<void> {
+    const url = `${this.booksUrl}/${book.id}`;
+    console.log('---> Delete: '+url);
+    return this.http.delete(url, { headers: this.headers })
       .toPromise()
       .then(() => null)
       .catch(this.handleError);

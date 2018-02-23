@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  
 <div [hidden]='findResult'>
     <form>
       <input placeholder="Book Id" #id/> <br>
@@ -7,15 +14,25 @@
 
 <div [hidden]='!findResult'>
 
-    <form>
-        <input class='form-control' [(ngModel)]="oldBook.id" placeholder="Book-id" name="id">
-        <input class='form-control' [(ngModel)]="oldBook.title" placeholder="title" name="title">
-        <input class='form-control' [(ngModel)]="oldBook.author" placeholder="author" name="author">
-        <button class='btn btn-primary' (click)="updateBook(oldBook)">Update Book</button>   
-</form>
+<form class='mt-4'>
+        
+        <input type="hidden"  class='form-control' [(ngModel)]="oldBook.id" name="id">
+        <label>Book Id</label>
+        <input class='form-control' [(ngModel)]="oldBook.bookId" name="bid">
+        <label>Book Name</label>
+        <input class='form-control' [(ngModel)]="oldBook.bookName" name="title">
+        <label>Author</label>
+        <input class='form-control' [(ngModel)]="oldBook.author" name="author">
+        <br/>
+         <button class='btn btn-default' (click)="updateBook(oldBook)">Update Book</button>   
+       
+      </form>
 
 
 </div>
+</body>
+</html>
+
 
             
 

@@ -1,3 +1,21 @@
-<p>
-  deletebook works!
-</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+  
+  </head>
+  <body class="container mt-4">
+    <div [hidden]='!result' class='bg-success'>
+      <h2>{{msg}}</h2>
+    </div>
+  <div>
+    <form>
+      <select #id>
+        <option *ngFor="let b of books" value="{{b.id}}">{{b.id}} - {{b.bookName}}</option>
+      </select>
+      <button (click)='deleteBook(id.value)'>Delete Book</button>
+    </form>
+  </div>
+
+  </body>
+</html>
