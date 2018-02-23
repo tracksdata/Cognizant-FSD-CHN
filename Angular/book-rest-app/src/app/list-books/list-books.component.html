@@ -1,3 +1,25 @@
-<p>
-  list-books works!
-</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+  </head>
+  <body>
+  
+
+    <table cellpadding='5' cellspacing='5' border=1>
+      <tr>
+        <th>Book Id</th>
+        <th>Book Name</th>
+        <th>Author</th>
+      </tr>
+
+      <tr *ngFor="let book of books">
+          <td>{{book.id}}</td>
+          <td>{{book.bookName}}</td>
+          <td>{{book.author}}</td>
+      </tr>
+    </table>
+
+    
+  </body>
+</html>

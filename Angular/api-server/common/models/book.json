@@ -7,10 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "_id": {
-      "type": "string",
-      "required": true
-    },
+    
     "bookName": {
       "type": "string",
       "required": true

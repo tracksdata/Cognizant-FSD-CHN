@@ -1,3 +1,17 @@
-<p>
-  add-book works!
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <div>
+    <form>
+    
+      <input name='bn' placeholder="Book Name" [(ngModel)]='book.bookName'/><br>
+      <input name='ba' placeholder="Author" [(ngModel)]='book.author'/><br>
+      <button (click)=saveBook(book)>Save Book</button>
+    </form>
+  </div>
+
+</body>
+</html>
