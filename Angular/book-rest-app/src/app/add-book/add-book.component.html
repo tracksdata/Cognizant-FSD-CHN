@@ -4,12 +4,23 @@
   <title></title>
 </head>
 <body>
-  <div>
+  <div class='form-group mt-4'>
     <form>
-    
-      <input name='bn' placeholder="Book Name" [(ngModel)]='book.bookName'/><br>
-      <input name='ba' placeholder="Author" [(ngModel)]='book.author'/><br>
-      <button (click)=saveBook(book)>Save Book</button>
+    <div>
+      <label for="Book Name">Book Name</label>
+    </div>
+    <div>
+        <input required name='bn' [(ngModel)]='book.bookName' class='form-control '/>
+    </div>
+    <div>
+        <label for="Book Author">Book Name</label>
+      </div>
+      <div>
+      <input name='ba' placeholder="Author" [(ngModel)]='book.author' class='form-control'/><br>
+    </div>
+    <div>
+      <button (click)=saveBook(book) class='btn btn-default'>Save Book</button>
+    </div>
     </form>
   </div>
 
