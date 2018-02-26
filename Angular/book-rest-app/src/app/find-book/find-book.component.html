@@ -1,3 +1,37 @@
-<p>
-  find-book works!
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Document</title>
+</head>
+<body class='mt-4'>
+  
+<div [hidden]='!showDiv'>
+  <form>
+    <label>Book Id</label>
+    <input type="text" #id><br>
+    <button (click)='findBook(id.value)'>Find Book</button> 
+  </form>
+</div>
+
+<hr/>
+<div [hidden]='showDiv'>
+  <table align='center' border=1>
+    <tr>
+      <th>Book Id</th>
+      <th>Book Name</th>
+      <th>Author</th>
+    </tr>
+
+    <tr>
+      <td>{{book.id}}</td>
+      <td>{{book.bookName}}</td>
+      <td>{{book.author}}</td>
+    
+    </tr>
+
+  </table>
+</div>
+  
+</body>
+</html>

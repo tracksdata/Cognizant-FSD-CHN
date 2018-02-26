@@ -17,11 +17,18 @@ export class BookService{
     }
 
    addBook(book:Book):Promise<Book>{
-       console.log('---> '+JSON.stringify(book))
     return this.http
       .post(this.apiUrl,book)	
       .toPromise()
       .catch(this.handleError);
+   }
+
+   findBook(id:string):Promise<Book>{
+    const url = `${this.apiUrl}/${id}`;
+        return this.http.get(url)
+        .toPromise()
+        .then(response => response.json() as Book)
+        .catch(this.handleError);
    }
 
     private handleError(error: any): Promise<any> {
