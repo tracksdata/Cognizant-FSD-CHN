@@ -10,13 +10,13 @@
       <label for="Book Name">Book Name</label>
     </div>
     <div>
-        <input required name='bn' [(ngModel)]='book.bookName' class='form-control '/>
-    </div>
+        <input  name='bookName' [(ngModel)]='book.bookName' class='form-control '/>
+      </div>
     <div>
         <label for="Book Author">Book Name</label>
       </div>
       <div>
-      <input name='ba' placeholder="Author" [(ngModel)]='book.author' class='form-control'/><br>
+      <input  name='author' [(ngModel)]='book.author' class='form-control'/><br>
     </div>
     <div>
       <button (click)=saveBook(book) class='btn btn-default'>Save Book</button>

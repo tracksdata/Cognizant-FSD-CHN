@@ -17,6 +17,7 @@ export class BookService{
     }
 
    addBook(book:Book):Promise<Book>{
+       console.log('---> '+JSON.stringify(book))
     return this.http
       .post(this.apiUrl,book)	
       .toPromise()

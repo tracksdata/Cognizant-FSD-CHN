@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { BookService } from '../bookservice';
 import { Book } from '../book';
@@ -13,6 +14,7 @@ export class AddBookComponent implements OnInit {
   book=new Book();
   saveBook(book:Book){
     this.bookService.addBook(book).then(book=>this.book=book);
+
   }
   ngOnInit() {
   }
