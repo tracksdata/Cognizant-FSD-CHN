@@ -31,6 +31,25 @@ export class BookService{
         .catch(this.handleError);
    }
 
+   updateBook(book: Book): Promise<Book> {
+    const url = `${this.apiUrl}/${book.id}`;
+    console.log('--service: id: '+book.id+" and title "+book.bookName);
+    return this.http
+      .put(url,book)
+      .toPromise()
+      .then(() => book)
+      .catch(this.handleError);
+  }
+
+  deleteBook(book: Book): Promise<void> {
+    const url = `${this.apiUrl}/${book.id}`;
+    console.log('---> Delete: '+url);
+    return this.http.delete(url)
+      .toPromise()
+      .then(() => null)
+      .catch(this.handleError);
+  }
+
     private handleError(error: any): Promise<any> {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);

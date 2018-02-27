@@ -1,0 +1,14 @@
+<h1>App Component</h1>
+<h3>Selected Id: {{selectedEmployeeObject.selectedId}}</h3>
+<h3>Selected Name: {{selectedEmployeeObject.selectedName}}</h3>
+
+
+<div *ngFor="let emp of employeeData">
+<app-child-data
+[id]='emp.empId'
+[name]='emp.empName'
+(sendRecord)='getRecord($event)'
+>
+
+</app-child-data>
+</div>

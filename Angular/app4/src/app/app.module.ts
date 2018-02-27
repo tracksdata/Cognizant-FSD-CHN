@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ChildDataComponent } from './child-data/child-data.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChildDataComponent
   ],
   imports: [
     BrowserModule

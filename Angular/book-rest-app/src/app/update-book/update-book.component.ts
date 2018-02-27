@@ -1,4 +1,6 @@
+import { Book } from './../book';
 import { Component, OnInit } from '@angular/core';
+import { BookService } from '../bookservice';
 
 @Component({
   selector: 'app-update-book',
@@ -7,8 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateBookComponent implements OnInit {
 
-  constructor() { }
+  showDiv=false;
+  book=new Book();
+  constructor(private bookService:BookService) { }
+  
+  findBook(id:string){
+    this.showDiv=true;
+    this.bookService.findBook(id).then(book=>this.book=book);
+  }
 
+  updateBook(book:Book){
+    this.bookService.updateBook(book).then(book=>this.book=book);
+  }
   ngOnInit() {
   }
 
