@@ -5,7 +5,7 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class BookService{
 
-    apiUrl='http://localhost:3000/api/books';
+    apiUrl='http://localhost:8080/getBooks';
 
     private headers = new Headers({ 'Content-Type': 'application/json' });
     constructor(private http:Http){}
@@ -33,7 +33,7 @@ export class BookService{
 
    updateBook(book: Book): Promise<Book> {
     const url = `${this.apiUrl}/${book.id}`;
-    console.log('--service: id: '+book.id+" and title "+book.bookName);
+    console.log('--service: id: '+book.id+" and title "+book.title);
     return this.http
       .put(url,book)
       .toPromise()
