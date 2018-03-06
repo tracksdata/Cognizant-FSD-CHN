@@ -17,14 +17,18 @@ export class BookService{
     }
 
    addBook(book:Book):Promise<Book>{
+    const url='http://localhost:8080/saveBook';
     return this.http
-      .post(this.apiUrl,book)	
-      .toPromise()
-      .catch(this.handleError);
+    .post(url,book)	
+    .toPromise()
+    .catch(this.handleError);
    }
 
-   findBook(id:string):Promise<Book>{
-    const url = `${this.apiUrl}/${id}`;
+   findBook(id:number):Promise<Book>{
+   
+    const url=`http://localhost:8080/findBook/${id}`;
+
+    //const url = `${this.apiUrl}/${id}`;
         return this.http.get(url)
         .toPromise()
         .then(response => response.json() as Book)
@@ -32,7 +36,7 @@ export class BookService{
    }
 
    updateBook(book: Book): Promise<Book> {
-    const url = `${this.apiUrl}/${book.id}`;
+   const url=`http://localhost:8080/updateBook/${book.id}`;
     console.log('--service: id: '+book.id+" and title "+book.title);
     return this.http
       .put(url,book)
@@ -42,12 +46,21 @@ export class BookService{
   }
 
   deleteBook(book: Book): Promise<void> {
-    const url = `${this.apiUrl}/${book.id}`;
+    const url=`http://localhost:8080/deleteBook/${book.id}`;
+
+    //const url = `${this.apiUrl}/${book.id}`;
     console.log('---> Delete: '+url);
     return this.http.delete(url)
       .toPromise()
       .then(() => null)
       .catch(this.handleError);
+  }
+
+  findBooks(title:string):Promise<Book[]>{
+    const url=`http://localhost:8080/findBooks?title=${title}`;
+    return this.http.get(url)
+    .toPromise().then(response=> response.json() as Book)
+    .catch(this.handleError);
   }
 
     private handleError(error: any): Promise<any> {

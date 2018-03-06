@@ -6,11 +6,17 @@
 <body>
   <div class='form-group mt-4'>
     <form>
-    <div>
+      <div>
+        <label for="Book Id">Book ID</label>
+      </div>
+      <div>
+          <input  name='id' [(ngModel)]='book.id' class='form-control '/>
+        </div>
+      <div>
       <label for="Book Name">Book Name</label>
     </div>
     <div>
-        <input  name='bookName' [(ngModel)]='book.bookName' class='form-control '/>
+        <input  name='bookName' [(ngModel)]='book.title' class='form-control '/>
       </div>
     <div>
         <label for="Book Author">Book Name</label>

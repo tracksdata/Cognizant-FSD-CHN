@@ -13,7 +13,8 @@ export class AddBookComponent implements OnInit {
   constructor(private bookService:BookService) { }
   book=new Book();
   saveBook(book:Book){
-    this.bookService.addBook(book).then(book=>this.book=book);
+    this.bookService.addBook(book);
+
 
   }
   ngOnInit() {

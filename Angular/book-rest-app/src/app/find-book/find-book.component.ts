@@ -13,7 +13,7 @@ export class FindBookComponent implements OnInit {
   
   showDiv=true;
   book=new Book();
-  findBook(id:string){
+  findBook(id:number){
     this.showDiv=false;
     this.bookService.findBook(id).then(book=>this.book=book);
   }

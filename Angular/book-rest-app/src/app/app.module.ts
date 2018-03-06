@@ -11,6 +11,7 @@ import { UpdateBookComponent } from './update-book/update-book.component';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { FindbyTitleComponent } from './findby-title/findby-title.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     ListBooksComponent,
     FindBookComponent,
     UpdateBookComponent,
-    DeleteBookComponent
+    DeleteBookComponent,
+    FindbyTitleComponent
   ],
   imports: [
     BrowserModule,

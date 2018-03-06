@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Document</title>
+</head>
+<body class='mt-4'>
+  
+<div [hidden]='showDiv' align='center'>
+  <form>
+    <label>Book Id</label>
+    <input type="text" #title><br>
+    <button (click)='findBooks(title.value)'>Find Books</button> 
+  </form>
+</div>
+
+<hr/>
+<div>
+  <table cellpadding='5' cellspacing='5' border=1 align='center'>
+    <tr>
+      <th>Book Id</th>
+      <th>Book Name</th>
+      <th>Author</th>
+    </tr>
+
+    <tr *ngFor="let book of books">
+        <td>{{book.id}}</td>
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+    </tr>
+  </table>
+</div>
+  
+</body>
+</html>

@@ -1,3 +1,22 @@
-<p>
-  delete-book works!
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Document</title>
+</head>
+<body class='mt-4'>
+  
+<div [hidden]='!showDiv'>
+  <form>
+    <label>Book Id</label>
+    <input type="text" #id><br>
+    <button (click)='deleteBook(id.value)'>Delete Book</button> 
+  </form>
+</div>
+
+<hr/>
+<div>
+</div>
+  
+</body>
+</html>
